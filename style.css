@@ -929,6 +929,7 @@ footer {
     text-align: center;
   }
   .header__drawer-header {
+    display: block;
     padding-top: 64px;
     margin-bottom: 24px;
     text-align: center;
