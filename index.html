@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serene Wedding</title>
+    <meta name="description" content="深い愛を誓うお二人へ、一生に残るリゾートウエディングを叶えます。" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="/img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Pinyon+Script&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="l-header">
+            <div class="header__wrapper">
+                <a href="index.html">
+                    <p class="header__title">Serene</p>
+                    <p class="header__title--under">Wedding</p>
+                </a>
+                <nav class="header__nav js-drawer">
+
+                    <!--SPドロワー用サイトタイトル -->
+                    <div class="header__drawer-header">
+                        <a href="index.html">
+                            <p class="header__logo">Serene</p>
+                            <p class="header__logo--under">Wedding</p>
+                        </a>
+                    </div>
+
+                    <ul class="header__navlist">
+                        <li class="header__navitem">
+                            <a href="#pickup" class="header__navlink">Pickup</a>
+                        </li>
+                        <li class="header__navitem">
+                            <a href="#plan" class="header__navlink">Plan</a>
+                        </li>
+                        <li class="header__navitem">
+                            <a href="#feature" class="header__navlink">Feature</a>
+                        </li>
+                        <li class="header__navitem">
+                            <a href="#gallery" class="header__navlink">Gallery</a>
+                        </li>
+                        <li class="header__navitem header__navitem--cta">
+                            <a href="#contact" class="header__navlink">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__nav-sns">
+                        <div class="header__nav-sns-item">
+                            <a href="#" class="header__nav-sns-link" aria-label="Instagram">
+                                <svg viewBox="0 0 40 40" class="header__nav-sns-icon" aria-hidden="true">
+                                    <path
+                                        d="M28.3334 14.1667C29.7141 14.1667 30.8334 13.0474 30.8334 11.6667C30.8334 10.286 29.7141 9.16669 28.3334 9.16669C26.9527 9.16669 25.8334 10.286 25.8334 11.6667C25.8334 13.0474 26.9527 14.1667 28.3334 14.1667Z"
+                                        stroke="currentColor" fill="currentColor" stroke-width="3.33333"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M26.6667 5C31.2667 5 35 8.73333 35 13.3333V26.6667C35 31.2667 31.2667 35 26.6667 35H13.3333C8.73333 35 5 31.2667 5 26.6667V13.3333C5 8.73333 8.73333 5 13.3333 5H20H26.6667Z"
+                                        stroke="currentColor" fill="none" stroke-width="3.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20 13.3333C23.6834 13.3333 26.6667 16.3166 26.6667 20C26.6667 23.6833 23.6834 26.6666 20 26.6666C16.3167 26.6666 13.3334 23.6833 13.3334 20C13.3334 16.3166 16.3167 13.3333 20 13.3333Z"
+                                        stroke="currentColor" fill="none" stroke-width="3.33333" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="#" class="header__nav-sns-link" aria-label="facebook">
+                                <svg viewBox="0 0 40 40" class="header__nav-sns-icon" aria-hidden="true">
+                                    <path
+                                        d="M36.3333 19.6667C36.3333 10.4667 28.8667 3 19.6667 3C10.4667 3 3 10.4667 3 19.6667C3 27.7333 8.73333 34.45 16.3333 36V24.6667H13V19.6667H16.3333V15.5C16.3333 12.2833 18.95 9.66667 22.1667 9.66667H26.3333V14.6667H23C22.0833 14.6667 21.3333 15.4167 21.3333 16.3333V19.6667H26.3333V24.6667H21.3333V36.25C29.75 35.4167 36.3333 28.3167 36.3333 19.6667Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- SPハンバーガー -->
+                <button class="header__hamburger js-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="l-main">
+        <section class="p-hero">
+            <video class="p-hero__media" autoplay muted loop playsinline>
+                <source src="/img/hero_movie.mp4" type="video/mp4">
+            </video>
+
+            <div class="p-hero__textwrapper">
+                <h1 class="p-hero__title">
+                    穏やかな自然の中で、<span class="u-br-sp">二人だけの特別な瞬間を。</span>
+                </h1>
+                <p class="p-hero__text">
+                    心地よい風と美しい景色に囲まれながら、<br>
+                    深い愛を誓うお二人へ、<span class="u-br-sp">一生に残るリゾートウエディングを叶えます。</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="p-pickup l-container" id="pickup">
+            <h1 class="c-section-title">Pickup</h1>
+            <p class="c-section-subtitle">おすすめ情報</p>
+
+            <!-- pickup Swiper用-->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="p-card">
+                            <img src="/img/pickup_slider1.png" class="p-card__img" alt="シーズン限定プランのイメージ">
+                            <h2 class="p-card__title">シーズン限定プラン</h2>
+                            <p class="p-card__text c-text">季節に応じた四季折々の自然美をバックに撮影。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-card">
+                            <img src="/img/pickup_slider2.png" class="p-card__img" alt="サンセットプランのイメージ">
+                            <h2 class="p-card__title">【夏季限定】サンセットプラン</h2>
+                            <p class="p-card__text c-text">夏ならではの鮮やかな夕日をバックに、幻想的なお二人を演出します。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-card">
+                            <img src="/img/pickup_slider3.png" class="p-card__img" alt="早期予約限定キャンペーンのイメージ">
+                            <h2 class="p-card__title">早期予約限定キャンペーン</h2>
+                            <p class="p-card__text c-text">挙式日の6ヶ月以上前に予約された方を対象に、様々な特典をご用意。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-card">
+                            <img src="/img/pickup_slider4.jpg" class="p-card__img" alt="フォトウェディング特集のイメージ">
+                            <h2 class="p-card__title">フォトウェディング特集</h2>
+                            <p class="p-card__text c-text">スタジオから自然光あふれるロケーションまで、理想のシーンで撮影できます。</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="p-card">
+                            <img src="/img/pickup_slider5.jpg" class="p-card__img" alt="ドレス・衣装特集のイメージ">
+                            <h2 class="p-card__title">ドレス・衣装特集</h2>
+                            <p class="p-card__text c-text">豊富なラインナップからおふたりのスタイルに合った一着をお選びいただけます。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ページネーション -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="p-plan l-container-sm" id="plan">
+            <h1 class="c-section-title">Plan</h1>
+            <p class="c-section-subtitle">プラン</p>
+
+            <div class="p-plan__tab">
+                <div class="p-plan__tab-nav">
+                    <button class="p-plan__tab-btn is-active" data-tab="shiki">四季の<span class="u-br-sp">ウェディング</span></button>
+                    <button class="p-plan__tab-btn" data-tab="umibe">海辺の<span class="u-br-sp">ウェディング</span></button>
+                    <button class="p-plan__tab-btn" data-tab="shinryoku">深緑の<span class="u-br-sp">ウェディング</span></button>
+                </div>
+
+                <div class="p-plan__content is-active" id="shiki">
+                    <img src="/img/plan_img1.png" alt="四季のウェディング">
+                    <div class="p-plan__text-area">
+                        <h2 class="p-plan__title">四季折々の美しさを存分に味わう、<span class="u-br-sp">心温まるウェディング</span></h2>
+                        <p class="p-plan__text c-text">
+                            四季の移ろいを、お二人の人生最高の日に。<br>
+                            私たちがご提案する「四季のウエディング」は、自然の恵みと季節の魅力を存分に活かしたプランです。
+                        </p>
+                        <p class="p-plan__text c-text">
+                            春夏秋冬、大切なお二人にぴったりの季節をお選びください。心を込めて、その季節ならではの装飾、お料理、お衣装をコーディネートいたします。<br>
+                            さらに、各地の伝統行事や季節の風物詩にちなんだ特別なイベントもご提案。<br>
+                            忘れられない思い出となる、世界にたった一つのウエディングフォトを、私たちと一緒に創り上げましょう。
+                        </p>
+                    </div>
+                    <div class="p-plan__btn">
+                        <a href="#" class="c-button">プラン詳細はこちら</a>
+                    </div>
+                </div>
+                <div class="p-plan__content" id="umibe">
+                    <img src="/img/plan_img2.png" alt="海辺のウェディング">
+                    <div class="p-plan__text-area">
+                        <h2 class="p-plan__title">波音と共に誓う、<span class="u-br-sp">幻想的なビーチウエディング</span></h2>
+                        <p class="p-plan__text c-text">
+                            青く輝く海と白い砂浜を舞台に、お二人だけの特別な瞬間を演出するプランです。
+                            barefoot(裸足)スタイルやトロピカルな装飾で、リラックスした雰囲気の中、自然と一体となったウエディングを。
+                            潮風に髪をなびかせ、砂浜に足跡を残しながら、心温まる時間をお過ごしください。
+                            海の青さと空の広さが、新たな人生の門出を祝福します。
+                        </p>
+                        <p class="p-plan__text c-text">
+                            貝殻やヒトデをあしらったデコレーション、パステルカラーの花々が彩るアーチ、そしてココナッツの香りが漂う中で、まるで楽園のような空間が広がります。<br>
+                            海辺ならではの開放感と、忘れられない思い出をご提供します。
+                        </p>
+                    </div>
+                    <div class="p-plan__btn">
+                        <a href="#" class="c-button">プラン詳細はこちら</a>
+                    </div>
+                </div>
+                <div class="p-plan__content" id="shinryoku">
+                    <img src="/img/plan_img3.png" alt="深緑のウェディング">
+                    <div class="p-plan__text-area">
+                        <h2 class="p-plan__title">木漏れ日に祝福される、<span class="u-br-sp">ナチュラルウエディング</span></h2>
+                        <p class="p-plan__text c-text">
+                            深緑に包まれた森の中で、まるおとぎ話の主人公になったかのような夢のような一日を過ごせるプランです。
+                        </p>
+                        <p class="p-plan__text">
+                            新緑の香りと小鳥のさえずりに包まれて、自然の中で愛を誓います。木々の間から差し込む柔らかな光が、二人の門出を優しく照らすでしょう。<br>
+                            緑豊かな森の中で、静寂と活気が共存する不思議な空間を体験してください。苔むした石畳や、清らかな小川のせせらぎが、お二人の物語に深みを添えます。<br>
+                            森の妖精に見守られているかのような、幻想的で忘れられない一日をお約束します。
+                        </p>
+                    </div>
+                    <div class="p-plan__btn">
+                        <a href="#" class="c-button">プラン詳細はこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-feature" id="feature">
+            <div class="l-container-sm">
+                <h1 class="c-section-title">Feature</h1>
+                <p class="c-section-subtitle">Serene Weddingの特徴</p>
+
+                <div class="p-feature__wrapper">
+                    <div class="p-feature__img">
+                        <img src="/img/feature_img1.jpg" alt="湖畔で過ごす貸切ウェディングのイメージ">
+                    </div>
+                    <div class="p-feature__text-box">
+                        <h2 class="p-feature__text-title">
+                            お二人の時間を大切にする撮影プラン
+                        </h2>
+                        <p class="p-feature__text c-text">貸切のプライベートロケーションを用意し、余裕のあるスケジュールで撮影を行います。<br>
+                            出会いや思い出を反映したストーリー性のある撮影や、自然な愛情表現を捉える瞬間を大切にします。</p>
+                    </div>
+                </div>
+                <div class="p-feature__wrapper p-feature__wrapper--reverse">
+                    <div class="p-feature__img">
+                        <img src="/img/feature_img2.jpg" alt="季節ごとの魅力的な風景の中で撮影するウェディングフォト">
+                    </div>
+                    <div class="p-feature__text-box">
+                        <h2 class="p-feature__text-title">
+                            季節ごとの自然の美しさを満喫
+                        </h2>
+                        <p class="p-feature__text c-text">
+                            春には桜並木や新緑の森、夏には青い海と白い砂浜、秋には紅葉の美しい風景、冬には幻想的な雪景色など、四季折々の魅力的な背景で思い出に残る写真を撮影します。</p>
+                    </div>
+                </div>
+                <div class="p-feature__wrapper">
+                    <div class="p-feature__img">
+                        <img src="/img/feature_img3.jpg" alt="非日常な環境で撮影する特別なウェディングフォト">
+                    </div>
+                    <div class="p-feature__text-box">
+                        <h2 class="p-feature__text-title">
+                            特別な空間での思い出作り
+                        </h2>
+                        <p class="p-feature__text c-text">プライベートビーチや貸切の森林など、非日常的な環境で撮影を行います。<br>
+                            また、花畑や満天の星空など、その時期でしか見られない絶景での撮影も行っています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-gallery" id="gallery">
+            <div class="l-container-sm">
+                <h1 class="c-section-title">Gallery</h1>
+                <p class="c-section-subtitle">ギャラリー</p>
+
+                <div class="p-gallery__list">
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img1.jpg" alt="森の中で寄り添うカップル">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img2.jpg" alt="ピンク色の花に囲まれた花嫁の後ろ姿">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img3.jpg" alt="林の小道で向かい合って立つカップル">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img4.jpg" alt="海辺の砂浜に設置された式場">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--large">
+                        <img src="./img/gallery_img5.jpg" alt="明るい林の中を手を繋いで歩くカップル">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--tall">
+                        <img src="./img/gallery_img6.jpg" alt="アーチ型の屋根の下で見つめ合うカップル">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--large">
+                        <img src="./img/gallery_img7.jpg" alt="花嫁を抱き上げる花婿">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img8.jpg" alt="都会的な街並みを背景に手を挙げるカップル">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--wide">
+                        <img src="./img/gallery_img9.jpg" alt="森の中のテラスで本を読む花嫁">
+                    </div>
+                    <div class="p-gallery__item p-gallery__item--square">
+                        <img src="./img/gallery_img10.jpg" alt="海を見下ろす丘の上で見つめ合うカップル">
+                    </div>
+                </div>
+            </div>
+            <div class="p-modal">
+                <div class="p-modal__overlay">
+                    <div class="p-modal__wrapper">
+                        <button class="p-modal__close">×</button>
+                        <div class="p-modal__content">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-contact l-container" id="contact">
+            <div class="p-contact__inner">
+                <div class="p-contact__textarea">
+                    <h2 class="p-contact__title">Contact</h2>
+                    <p class="p-contact__subtitle">お問い合わせ</p>
+                    <p class="p-contact__text">
+                        プランなどのご相談承ります。<br>まずはお気軽にお問い合わせください。
+                    </p>
+                </div>
+                <div class="p-contact__btn">
+                    <a href="#">お問い合わせはこちら</a>
+                </div>
+            </div>
+            <div class="p-contact__sns">
+                <a href="#" class="p-contact__sns-link p-contact__sns-link--instagram" aria-label="Instagram">
+                    <svg view-box="0 0 40 40" class="icon">
+                        <path
+                            d="M28.3334 14.1665C29.7141 14.1665 30.8334 13.0472 30.8334 11.6665C30.8334 10.2858 29.7141 9.1665 28.3334 9.1665C26.9527 9.1665 25.8334 10.2858 25.8334 11.6665C25.8334 13.0472 26.9527 14.1665 28.3334 14.1665Z"
+                            fill="white" />
+                        <path
+                            d="M26.6667 5C31.2667 5 35 8.73333 35 13.3333V26.6667C35 31.2667 31.2667 35 26.6667 35H13.3333C8.73333 35 5 31.2667 5 26.6667V13.3333C5 8.73333 8.73333 5 13.3333 5H20H26.6667Z"
+                            stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"
+                            fill="none" />
+                        <path
+                            d="M20 13.3335C23.6834 13.3335 26.6667 16.3168 26.6667 20.0002C26.6667 23.6835 23.6834 26.6668 20 26.6668C16.3167 26.6668 13.3334 23.6835 13.3334 20.0002C13.3334 16.3168 16.3167 13.3335 20 13.3335Z"
+                            stroke="white" stroke-width="3.33333" stroke-linecap="round" stroke-linejoin="round"
+                            fill="none" />
+                    </svg>
+                    Instagram
+                </a>
+                <a href="#" class="p-contact__sns-link p-contact__sns-link--facebook" aria-label="Instagram">
+                    <svg view-box="0 0 40 40" class="icon">
+                        <path
+                            d="M34 17.0426C34 7.63509 26.384 0 17 0C7.616 0 0 7.63509 0 17.0426C0 25.2912 5.848 32.1594 13.6 33.7444V22.1554H10.2V17.0426H13.6V12.782C13.6 9.49273 16.269 6.81704 19.55 6.81704H23.8V11.9298H20.4C19.465 11.9298 18.7 12.6967 18.7 13.6341V17.0426H23.8V22.1554H18.7V34C27.285 33.1479 34 25.8877 34 17.0426Z"
+                            fill="white" />
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="l-footer">
+            <div class="footer__wrapper">
+                <a href="index.html">
+                    <p class="footer__title">Serene Wedding</p>
+                </a>
+
+                <nav class="footer__nav">
+                    <ul class="footer__navlist">
+                        <li class="footer__navitem">
+                            <a href="#pickup" class="footer__navlink">Pickup</a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a href="#plan" class="footer__navlink">Plan</a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a href="#feature" class="footer__navlink">Feature</a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a href="#gallery" class="footer__navlink">Gallery</a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a href="#contact" class="footer__navlink">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer__copyright">
+                ©Serene Wedding. 2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>

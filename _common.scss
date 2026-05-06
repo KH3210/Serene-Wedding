@@ -1,0 +1,99 @@
+/*-------------------------------------------
+共通クラス
+-------------------------------------------*/
+@use 'setting' as s;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Zen Old Mincho", "Noto Sans JP", "Pinyon Script", serif;
+  letter-spacing: 0.08em;
+  line-height: 1.75;
+  background: s.$color-bg-main;
+  color: s.$color-text;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*-------------------------------------------
+共通パーツ
+-------------------------------------------*/
+.l-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.l-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: s.$space-lg 0;
+
+  @include s.mq(sm) {
+    padding: 64px 0;
+  }
+}
+
+.l-container-sm {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: s.$space-lg 0;
+
+  @include s.mq(sm) {
+    padding: 64px 20px;
+  }
+}
+
+.c-section-title {
+  font-family: Pinyon Script;
+  font-size: s.$font-size-lg;
+  color: s.$color-heading;
+  text-align: center;
+  line-height: 1.0;
+}
+
+.c-section-subtitle {
+  font-family: Noto Sans JP;
+  font-size: s.$font-size-xs;
+  color: s.$color-heading;
+  text-align: center;
+  margin-bottom: s.$space-md;
+}
+
+.c-heading {
+  font-family: Zen Old Mincho;
+  font-size: s.$font-size-sm;
+  font-weight: 600;
+  color: s.$color-heading;
+  text-align: center;
+}
+
+.c-text {
+  font-size: s.$font-size-xs;
+  color: s.$color-text;
+}
+
+.c-button {
+  padding: 16px 83px;
+  background-color: s.$color-heading;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.c-button:hover {
+  color: s.$color-text;
+}
+
+//SP改行用
+.u-br-sp {
+  display: inline;
+
+  @include s.mq(sm) {
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+@use "sass:map";
+
+// 色を変数登録
+$color-bg-main:#FFFFFF;
+$color-bg-alt: #E6E6E6;
+$color-heading:#A88657; //見出し
+$color-text: #333333; //通常テキスト
+
+
+// フォントサイズを変数登録
+$font-size-xs: 16px;
+$font-size-sm: 20px;
+$font-size-md: 24px;
+$font-size-lg: 36px;
+
+
+// 余白を変数登録
+$space-xs: 16px;
+$space-sm: 24px;
+$space-md: 40px;
+$space-lg: 80px;
+
+$space-lg-sp: 64px;
+
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+    sm: 480px,
+);
+
+@mixin mq($size) {
+    @media (max-width: map.get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+
