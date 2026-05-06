@@ -624,6 +624,9 @@ footer {
 }
 
 @include s.mq(sm) {
+    html {
+        scroll-padding-top: 80px;
+    }
 
     .l-main {
         margin: 0;

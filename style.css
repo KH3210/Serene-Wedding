@@ -801,6 +801,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+  html {
+    scroll-padding-top: 80px;
+  }
   .l-main {
     margin: 0;
     padding-top: 80px;
