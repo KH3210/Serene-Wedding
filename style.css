@@ -194,11 +194,11 @@ img {
   color: #333333;
 }
 
-.header__sns {
+.header__nav-sns {
   margin-top: 24px;
 }
 
-.header__sns-item {
+.header__nav-sns-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +208,7 @@ img {
           justify-content: center;
 }
 
-.header__sns-link {
+.header__nav-sns-link {
   width: 40px;
   height: 40px;
   display: -webkit-box;
@@ -222,7 +222,7 @@ img {
           justify-content: center;
 }
 
-.header__sns-icon {
+.header__nav-sns-icon {
   color: #A88657;
 }
 
@@ -237,12 +237,12 @@ img {
   height: 100%;
 }
 
-.p-hero__media {
+.p-hero__media video {
   width: 100%;
   height: 100%;
 }
 
-.p-hero__text-wrapper {
+.p-hero__textwrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,6 +407,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 160px;
 }
 .p-feature__wrapper:last-child {
@@ -426,14 +429,6 @@ img {
 .p-feature__img {
   max-width: 500px;
 }
-@media (max-width: 1110px) {
-  .p-feature__img {
-    max-width: 500px;
-    width: 100%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-  }
-}
 
 .p-feature__img img {
   width: 100%;
@@ -451,7 +446,7 @@ img {
 
 .p-feature__text-box {
   max-width: 500px;
-  min-height: 280px;
+  height: 280px;
   background: #FFF;
   margin-left: -80px;
   margin-top: 130px;
@@ -556,7 +551,7 @@ img {
 }
 
 .p-modal__overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   display: -webkit-box;
@@ -634,11 +629,6 @@ img {
           align-items: center;
   margin-bottom: 24px;
 }
-@media (max-width: 900px) {
-  .p-contact__inner {
-    padding: 40px;
-  }
-}
 
 .p-contact__textarea {
   max-width: 440px;
@@ -660,11 +650,6 @@ img {
 
 .p-contact__btn {
   width: min(440px, 100%);
-}
-@media (max-width: 900px) {
-  .p-contact__btn {
-    width: min(330px, 100%);
-  }
 }
 
 .p-contact__btn a {
@@ -743,7 +728,7 @@ img {
   background-image: url(./img/facebook_cta.png);
 }
 
-.c-icon {
+.icon {
   width: 40px;
   height: 40px;
   color: #fff;
@@ -772,11 +757,6 @@ footer {
           align-items: center;
   position: relative;
   padding-bottom: 24px;
-}
-@media (max-width: 900px) {
-  .footer__wrapper {
-    gap: 40px;
-  }
 }
 
 .footer__title {
@@ -824,8 +804,7 @@ footer {
   display: none;
 }
 
-/* ===== Tablet ===== */
-@media (max-width: 820px) {
+@media (max-width: 480px) {
   html {
     scroll-padding-top: 80px;
   }
@@ -964,6 +943,39 @@ footer {
     max-width: 292px;
     margin: 0 auto;
   }
+  .p-hero {
+    max-width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .p-hero__media {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 700px;
+  }
+  .p-hero__textwrapper {
+    padding: 40px 20px;
+  }
+  .swiper {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .p-plan__content {
+    padding: 0;
+  }
+  .p-plan__tab-nav {
+    gap: 16px;
+  }
+  .p-plan__tab-btn {
+    width: 100%;
+    font-size: 14px;
+  }
   .p-feature__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -989,49 +1001,6 @@ footer {
   }
   .p-feature__img {
     max-width: 100%;
-  }
-  .footer__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 40px;
-  }
-}
-/* ===== SP ===== */
-@media (max-width: 480px) {
-  .p-hero {
-    max-width: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .p-hero__media {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 700px;
-  }
-  .p-hero__text-wrapper {
-    padding: 40px 20px;
-  }
-  .swiper {
-    padding: 0;
-    margin-bottom: 0;
-  }
-  .p-plan__content {
-    padding: 0;
-  }
-  .p-plan__tab-nav {
-    gap: 16px;
-  }
-  .p-plan__tab-btn {
-    width: 100%;
-    font-size: 14px;
   }
   .p-gallery__list {
     gap: 8px;
@@ -1080,7 +1049,10 @@ footer {
     padding: 40px 20px;
   }
   .footer__wrapper {
-    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__title {
     margin-bottom: 24px;
