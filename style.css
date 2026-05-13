@@ -532,14 +532,18 @@ img {
 }
 
 .p-modal {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   z-index: 10;
 }
 
 .p-modal.is-open {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .p-modal__wrapper {
@@ -547,7 +551,7 @@ img {
 }
 
 .p-modal__overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.6);
   display: -webkit-box;

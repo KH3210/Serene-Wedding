@@ -89,6 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
       parent.classList.add('is-selected');
 
       modal.classList.add('is-open');
+
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth;  //スクロールバー幅を測定
+
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight =`${scrollBarWidth}px`;  //スクロールバー幅を右に足して中央維持
+
       modalImage.src = img.src;
       modalImage.alt = img.alt;
     });
@@ -96,6 +103,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeModal = () => {
     modal.classList.remove('is-open');
+
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+
     clearSelected();
   };
 
