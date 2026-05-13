@@ -825,7 +825,7 @@ footer {
 }
 
 /* ===== Tablet ===== */
-@media (max-width: ) {
+@media (max-width: 820px) {
   html {
     scroll-padding-top: 80px;
   }

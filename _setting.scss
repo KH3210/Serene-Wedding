@@ -26,6 +26,7 @@ $space-lg-sp: 64px;
 // ブレイクポイントを変数&mixin登録
 $breakpoints: (
     sm: 480px,
+    md: 820px,
 );
 
 @mixin mq($size) {
